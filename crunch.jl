@@ -1,5 +1,12 @@
+include("utils/parseStringToChars.jl")
+
 function crunch(CrunchString::String)
-    print(CrunchString);
+    characters=[]
+    for char in CrunchString
+         x=parseStringToChars(CrunchString)
+         push!(characters, char)
+         end
+         print(characters)
 end
 
 crunch("Hello!")
