@@ -6,7 +6,12 @@ function crunch(CrunchString::String)
          x=parseStringToChars(CrunchString)
          push!(characters, char)
          end
-         print(characters)
+
+    for char in characters
+        first_in_list = characters[0]
+        last_in_list = characters[list_len]
+        print("First In List: ", first(characters), "\n Last In List: ", last(characters)-1)
+        end
 end
 
 crunch("Hello!")
